@@ -2,11 +2,11 @@ import random
 number = random.randint(1,9)
 guess = None  
 chances = 0
-
+guessForYou = random.randint(1,9)
 
 
 while chances < 5:
-    guess = int(input("Enter a number between 1 and 9: "))
+    guess = int(input("Enter a number between 1 and 9: " + str(guessForYou)))
 
     if guess < number:
         print("Your number is too low")
@@ -17,7 +17,7 @@ while chances < 5:
     else: 
         guess = number
         print("You got it correct")
-    chances += 1
+        break
 
     if not chances < 5:
         print("You lose!!! the correct number is", number)
