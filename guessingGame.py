@@ -6,7 +6,7 @@ guessForYou = random.randint(1,9)
 
 
 while chances < 5:
-    guess = int(input("Enter a number between 1 and 9: " + str(guessForYou)))
+    guess = int(input("Enter a number between 1 and 9: "))
 
     if guess < number:
         print("Your number is too low")
